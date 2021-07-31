@@ -9,7 +9,7 @@ const intial_values = {
 };
 const Update = () => {
   const [users, setusers] = useState(intial_values);
-  // const [subtopic, topic, notes] = new Array(users);
+  const [subtopic, topic, notes] = new Array(users);
   const onvalueChange = (e) => {
     setusers({ ...users, [e.target.name]: e.target.value });
   };
