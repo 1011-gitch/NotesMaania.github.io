@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { get_note } from "./api";
-import { Link } from "react-router-dom";
 
 const Create = () => {
   useEffect(() => {
@@ -22,12 +21,11 @@ const Create = () => {
                 <div className="d-flex">
                   <u className="mr-auto">{user.subtopic}</u>
                   <div>
-                    <Link
+                    <button
                       className="btn btn-outline-secondary"
-                      to={`/edit/${user.id}`}
                     >
                       Edit
-                    </Link>
+                    </button>
                     <button className="btn btn-secondary">Delete</button>
                   </div>
                 </div>
