@@ -11,9 +11,10 @@ const Create = () => {
     const response = await get_note();
     setUsers(response.data);
   };
+  const arr=new Array(users);
   return (
     <div style={{ margin: "10px", backgroundColor: "#C0C0C0" }} className="row">
-      {[...new Array(users)].map((user) => (
+      {arr.map((user) => (
         <div className="col-lg-4 col-md-6">
           <div className="card m-4 p-4">
             <div className="card-body">
