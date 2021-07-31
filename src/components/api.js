@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let url = "http://localhost:3003/users";
+let url = "http://127.0.0.1:3003/users";
 
 export const get_note = async (id) => {
   id = id || "";
