@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let url = "http://127.0.0.1:3003/users";
+let url = "https://my-json-server.typicode.com/1011-gitch/db/db";
 
 export const get_note = async (id) => {
   id = id || "";
