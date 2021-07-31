@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let url = "https://my-json-server.typicode.com/typicode/demo/db";
+let url = "http://localhost:3003/users";
 
 export const get_note = async (id) => {
   id = id || "";
